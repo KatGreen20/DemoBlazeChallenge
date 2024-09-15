@@ -1,0 +1,8 @@
+Conclusiones del Ejercicio 1 Automatización E2E
+
+- Se ha logrado hacer una prueba automatizada del Sign in de la página DemoBlaze y con esos mismos datos del Registro realizar el Log in
+- Se ha realizado otro escenario en donde se Ingresa con un usuario y contraseña quemadas para posterior realizar una compra del producto
+- Al realizar las dos pruebas al mismo tiempo existe un error al ingresar el nombre de usuario en el Login en el segundo escenario "Login con Carrito" (Tag: @Cart)
+- Se pueden mejorar las pruebas al ingresar con el mismo usuario que se crea en el escenario uno ("Registro"), en el escenario dos ("Login con Carrito")
+
+ 
