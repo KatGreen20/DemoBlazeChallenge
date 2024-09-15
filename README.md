@@ -20,5 +20,7 @@ Para verificar la prueba y obtener el reporte se puede ejecutar el siguiente com
 ## Verificaión de prueba aprobada
 
 ![image](https://github.com/user-attachments/assets/cdb47d20-4c2c-422b-97b1-8927e74402a6)
+![image](https://github.com/user-attachments/assets/54a6c598-6917-4617-808e-e44df6d3a502)
+
 
 Aqui se puede ver un video de la prueba: https://drive.google.com/file/d/1raY3KC8Ozj0r3bo4S0VLc-DbpsLHyFOm/view?usp=sharing 
