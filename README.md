@@ -4,9 +4,9 @@ Este proyecto consiste en probar mediante pruebas automatizadas el login y la co
 
 ## Prerequisitos:
   - Maquina local con el sistema operativo Windows 11
-	- IntelliJ IDE Community Edition version 2024.2.1
-	- Maven version 3.9.8
-	- JDK versión 11.0.12
+  - IntelliJ IDE Community Edition version 2024.2.1
+  - Maven version 3.9.8
+  - JDK versión 11.0.12
 
 ## Comandos de Instalación
   - mvn install -DskipTests
