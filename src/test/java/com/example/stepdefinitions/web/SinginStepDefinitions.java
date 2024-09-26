@@ -47,27 +47,26 @@ public class SinginStepDefinitions {
         }
 
 
-        //Login con el Carrito
+        //Escenario outline "Login con Carrito"
 
         @Dado("^que soy un usuario de DemoBlaze$")
-        public void que_soy_un_usuario_de_demo_blaze() {
+        public void queSoyUnUsuarioDeDemoBlaze() {
                 theActorInTheSpotlight().wasAbleTo(Open.url("https://www.demoblaze.com"));
-
-        }
-        @Cuando("^agrego un celular al carrito$")
-        public void agrego_un_celular_al_carrito() {
-                theActorInTheSpotlight().attemptsTo(LoginCart.loginCart());
         }
 
-        //Ingresar para ir directo a la pestaña de Cart
-        @Cuando("^ingreso para verificar carrito$")
-        public void ingreso_para_verificar_carrito() {
+        @Cuando("^agrego el producto \"([^\"]*)\" al carrito$")
+        public void agregoElProductoAlCarrito(String producto) {
+                theActorInTheSpotlight().attemptsTo(LoginCartConProducto.loginCartConProducto(producto));
+        }
+
+        @Y("^ingreso para verificar carrito$")
+        public void ingresoParaVerificarCarrito() {
                 theActorInTheSpotlight().attemptsTo(LoginNewCart.loginNewCart());
         }
 
-        @Entonces("^verifico que se encuentre agregado$")
-        public void verifico_que_se_encuentre_agregado() {
-                theActorInTheSpotlight().should(GivenWhenThen.seeThat(VerifyProduct.verifyProduct(), Matchers.is(true)));
+        @Entonces("^verifico que el producto \"([^\"]*)\" se encuentre agregado$")
+        public void verificoQueElProductoSeEncuentreAgregado(String producto) {
+                theActorInTheSpotlight().should(GivenWhenThen.seeThat(VerifyProduct.verifyProduct(producto), Matchers.is(true)));
         }
 
         @Y("^finalizo la compra verificada$")

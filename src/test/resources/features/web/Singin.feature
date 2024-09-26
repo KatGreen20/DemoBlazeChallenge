@@ -10,12 +10,16 @@
 
 
     @Cart
-    Escenario: Login con Carrito
+    Esquema del escenario: Login con Carrito y agregar productos
       Dado que soy un usuario de DemoBlaze
-      Cuando agrego un celular al carrito
-      Cuando ingreso para verificar carrito
-      Entonces verifico que se encuentre agregado
+      Cuando agrego el producto "<producto>" al carrito
+      Y ingreso para verificar carrito
+      Entonces verifico que el producto "<producto>" se encuentre agregado
       Y finalizo la compra verificada
+      Ejemplos:
+        | producto          |
+        | Samsung galaxy s6 |
+        | Nokia lumia 1520  |
 
 
 

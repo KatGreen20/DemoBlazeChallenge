@@ -1,26 +1,31 @@
 # Demo Blaze Challenge
 
-Este proyecto consiste en probar mediante pruebas automatizadas el login y la compra de productos de la página web https://www.demoblaze.com
+El proyecto consiste en probar mediante pruebas automatizadas el login y la compra de productos de la página web https://www.demoblaze.com
 
-## Prerequisitos:
+## 1. Prerequisitos
   - Maquina local con el sistema operativo Windows 11
   - IntelliJ IDE Community Edition version 2024.2.1
   - Maven version 3.9.8
   - JDK versión 11.0.12
 
-## Comandos de Instalación
+## 2. Comandos de Instalación
   - mvn install -DskipTests
   - npm install
 
-## Ejecución del Test
+## 3. Instrucciones para ejecutar los test
 Para verificar la prueba y obtener el reporte se puede ejecutar el siguiente comando en la terminal del IDE:
   ```
   mvn clean verify
   ```
-## Verificaión de prueba aprobada
+Se puede ver el reporte en el archivo **reporte.zip** de las pruebas ejecutadas
 
-![image](https://github.com/user-attachments/assets/cdb47d20-4c2c-422b-97b1-8927e74402a6)
-![image](https://github.com/user-attachments/assets/54a6c598-6917-4617-808e-e44df6d3a502)
+## 4. Información adicional
+
+### Verificación de prueba aprobada
 
 
-Aqui se puede ver un video de la prueba: https://drive.google.com/file/d/1raY3KC8Ozj0r3bo4S0VLc-DbpsLHyFOm/view?usp=sharing 
+### Video de ejecución de la prueba
+Aqui se puede ver un video de la prueba: https://drive.google.com/file/d/1Uszjul7xqiCqi3SlcP6cLDIKweTGZFpO/view?usp=sharing
+
+### Documentación ScreenPlay
+https://serenity-bdd.github.io/docs/screenplay/screenplay_fundamentals

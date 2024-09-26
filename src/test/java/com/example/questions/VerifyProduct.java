@@ -5,13 +5,18 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
 public class VerifyProduct implements Question<Boolean> {
+    private final String producto;
+
+    public VerifyProduct(String producto) {
+        this.producto = producto;
+    }
+
     @Override
     public Boolean answeredBy(Actor actor) {
-
-        boolean compare= Cart.ProductInCart.resolveFor(actor).getText().contains("Samsung galaxy s6");
-        return compare;
+        return Cart.ProductInCart.resolveFor(actor).getText().contains(producto);
     }
-    public static VerifyProduct verifyProduct(){
-        return new VerifyProduct();
+
+    public static VerifyProduct verifyProduct(String producto) {
+        return new VerifyProduct(producto);
     }
 }

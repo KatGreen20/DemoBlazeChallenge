@@ -16,9 +16,8 @@ public class Home {
     public static final Target ButtomLogin= Target.the("Login completado").locatedBy("//button[@onclick=\"logIn()\"]");
     public static final Target UserLogin= Target.the("Welcome").locatedBy("//a[@id=\"nameofuser\"]");
 
-    //Localizadores producto celular
-    public static final Target Product= Target.the("Celular").locatedBy("(//a[@href=\"prod.html?idp_=1\"])[2]");
-    public static final Target ButtomProduct= Target.the("Añadir al carrito").locatedBy("//a[@onclick=\"addToCart(1)\"]");
-
+    //Localizadores producto
+    public static final Target Product= Target.the("Producto").locatedBy("//a[contains(text(),'{0}')]");
+    public static final Target ButtomProduct= Target.the("Añadir al carrito").locatedBy("//a[contains(text(),'Add to cart')]");
 
 }
