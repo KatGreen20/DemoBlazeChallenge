@@ -22,7 +22,8 @@ Se puede ver el reporte en el archivo **reporte.zip** de las pruebas ejecutadas
 ## 4. Información adicional
 
 ### Verificación de prueba aprobada
-
+![image](https://github.com/user-attachments/assets/305cdbc3-f80a-4f2e-8648-77b564af5934)
+![image](https://github.com/user-attachments/assets/d257038c-d5fe-4807-a5b6-ddd4a3f74040)
 
 ### Video de ejecución de la prueba
 Aqui se puede ver un video de la prueba: https://drive.google.com/file/d/1Uszjul7xqiCqi3SlcP6cLDIKweTGZFpO/view?usp=sharing
